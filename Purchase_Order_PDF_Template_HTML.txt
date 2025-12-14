@@ -1,0 +1,330 @@
+    <table style="width: 740px; height: 136px;" border="0">
+      <tbody>
+        <tr>
+          <td style="text-align: right; vertical-align: top; background-color: white; width: 150px;" align="left" valign="top">
+            <p style="text-align: left;"><img alt="LOGO HERE" src="?entryPoint=attachment&amp;id=68651dba16fa6a7d8" style="width: 154.597px; height: 54.4px;"></p>
+          </td>
+          <td style="text-align: left;" align="left" valign="top">
+            <table style="width: 560px;" border="0">
+              <tbody>
+                <tr>
+                  <td rowspan="1" colspan="2" style="padding-left: 50px; width: 262px; height: 116.617px;" align="left" valign="top"><b>PURCHASE ORDER</b><br>
+                    P.O. #&nbsp;{{poNumber}}<br>Supplier Code: {{supplier.vendorId}} </td>
+                  <td style="padding-left: 0px; width: 252.117px;" align="left" valign="top">[COMPANY NAME]<br>[COMPANY STREET ADDRESS]<br>[COMPANY CITY] [COMPANY COUNTRY]<br>
+                    Tel: [COMPANY PHONE]<br>
+                    Contact: [CONTACT NAME]<br>
+                    PO Date: {{today}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+    <table style="width: 740px;" border="0">
+      <tbody>
+        <tr>
+          <td style="font-size: 12; text-align: left; vertical-align: top; background-color: white; height: 98.35px; width: 307.2px;">{{supplier.name}}<br>
+            {{supplier.billingAddressCity}}<br>
+            {{supplier.billingAddressCountry}}<br>
+            {{supplier.emailAddress}}<br>
+            {{supplier.phoneNumber}}</td>
+          <td style="width: 3.95px;"><br>
+          </td>
+          <td style="text-align: right; background-color: white; vertical-align: top; width: 133.283px;"><br>
+            <br>
+          </td>
+          <td style="width: 2.1333px;"><br>
+          </td>
+          <td style="text-align: left; vertical-align: top; background-color: white; width: 271.45px;"><br>
+            <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="width: 677px; height: 33px;">
+      <tbody>
+        <tr>
+          <td style="text-align: left; vertical-align: top; background-color: white; width: 120.05px;" align="left" valign="top">Supplier Ref.</td>
+          <td style="text-align: left; vertical-align: top; background-color: white; width: 546.95px;" valign="top">{{{supplierReference}}} </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="width: 730px; height: 155px; background-color: #f5f5f5;" border="0">
+      <tbody>
+        <tr>
+          <td><b>Delivery Address:</b><br>
+          </td>
+          <td><b>Delivery Notes:</b><br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; width: 380px;"><font size="2">[COMPANY BRANCH]<br>[BRANCH STREET]<br>[BRANCH POSTAL CODE]<br>[BRANCH CITY]<br>[BRANCH COUNTRY]<br>
+              Email: [COMPANY EMAIL]</font></td>
+          <td style="vertical-align: top; width: 323.95px;">{{{description}}}<br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table style="border-collapse: collapse; width: 733px;" cellpadding="5" border="1">
+      <tbody>
+        <tr style="background-color: #f5f5f5;">
+          <td style="width: 30px;"><span style="font-size: x-small;"><strong>Line</strong></span></td>
+          <td style="width: 450px; background-color: #f5f5f5;"><span style="font-weight: 600; font-size: x-small;">Product
+              Name</span></td>
+          <td style="width: 60px;"><span style="font-size: x-small;"><strong>Quantity</strong></span></td>
+          <td><span style="font-size: x-small;"><strong>Price</strong></span></td>
+          <td><span style="font-size: x-small;"><strong>Net<br>
+              </strong></span></td>
+        </tr>
+        <!-- {{#each purchaseOrderLines}} -->
+        <tr>
+          <td><span style="font-size: x-small;">{{@key}}</span></td>
+          <td style="text-align: left;"><span style="font-size: x-small; text-align: start;">&nbsp;{{lineProductName}}</span>
+          </td>
+          <td style="text-align: right;"><span style="font-size: x-small;">{{quantity}}</span></td>
+          <td style="text-align: right;"><span style="font-size: x-small;">{{price}}</span></td>
+          <td style="text-align: right;"><span style="font-size: x-small;">{{amount}}</span></td>
+        </tr>
+        <!-- {{/each}} -->
+        <tr>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td colspan="2" style="text-align: right;"><span style="font-size: x-small;">Tax ({{currency}})</span></td>
+          <td style="text-align: right;" colspan="1"><span style="font-size: x-small;">{{taxAmount}}</span></td>
+        </tr><tr><td><br></td><td><br></td><td colspan="2" style="text-align: right;"><span style="font-size: x-small;">Total Amount ({{currency}})</span></td><td style="text-align: right;" colspan="1"><span style="font-size: x-small;">{{grandTotal}}</span></td></tr>
+      </tbody>
+    </table>
+    <br>
+    <table style="border-collapse: collapse; border: 1px solid black; height: 100px; width: 700px;" cellpadding="5" border="1">
+      <tbody>
+        <tr>
+          <td style="font-size: 10; width: 350px; text-align: left; vertical-align: top; background-color: whitesmoke; width: 350px;" align="left" valign="top">Required Date:&nbsp;{{requiredDate}}<br>INCOTERMS: {{incoTerms}}<br>Delivery Instructions:<br>[INSTRUCTIONS]<br></td>
+          <td style="font-size: 10; width: 350px; text-align: left; vertical-align: top; background-color: whitesmoke; width: 350px;" align="left" valign="top">Required Documents:<br>
+            {{#each requiredDocuments}} {{#ifEqual ./this '1'}} Invoice<br>
+            {{/ifEqual}} {{#ifEqual ./this '2'}} Packing List <br>
+            {{/ifEqual}} {{#ifEqual ./this '3'}} Quality Certificate <br>
+            {{/ifEqual}} {{#ifEqual ./this '4'}} Certificate of Origin <br>
+            {{/ifEqual}} {{#ifEqual ./this '5'}} Bill Of Lading / AWB<br>
+            {{/ifEqual}} {{/each}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br pagebreak="true">
+    GENERAL CONDITIONS
+    <div style="font-family: Arial, sans-serif; font-size:9pt; line-height:1.05;">
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">1.
+        Definitions</div>
+      <div><b>Agreement</b>: the agreement between the Supplier and the Company
+        consisting of the Purchase Order and these General Conditions.</div>
+      <div><b>Anti-Corruption Law</b>: any law relating to the prevention of
+        bribery, fraud, kickbacks or other corrupt acts, including the UK
+        Bribery Act 2010.</div>
+      <div><b>Anti-Corruption Policy</b>: any Company policy or procedure
+        related to the prevention of bribery, fraud, kickbacks or other corrupt
+        acts, including (a) Anti-Bribery &amp; Anti-Corruption Policy; (b)
+        Business Conduct and Ethics Policy; and (c) Whistle-blower Policy.</div>
+      <div><b>Associated Person</b>: any person associated with the Supplier
+        performing services or providing goods for or on behalf of the Supplier
+        in connection with this Agreement or otherwise an "associated person"
+        under section 8 of the UK Bribery Act 2010.</div>
+      <div><b>Authority</b>: any government department, council, authority,
+        agency, or other party under a Law, with rights or consent requirements
+        regarding the supply of Deliverables. <b>Company</b>: the company
+        specified in the Purchase Order as the Company.</div>
+      <div><b>Contract Price</b>: the total amount payable to the Supplier for
+        the Deliverables, as specified in the Purchase Order, including all
+        applicable taxes.</div>
+      <div><b>Country</b>: the jurisdiction set out as the Country in the
+        Purchase Order.</div>
+      <div><b>Delivery/Delivered</b>: delivery of Deliverables by the Supplier
+        to the Delivery Point and their acceptance by the Company.</div>
+      <div><b>Delivery Date</b>: the time and date for Delivery as specified in
+        the Purchase Order.</div>
+      <div><b>Delivery Location</b>: the place specified in the Purchase Order
+        for Delivery.</div>
+      <div><b>Deliverables</b>: the Goods and/or Services to be Delivered as
+        described in the Purchase Order.</div>
+      <div><b>Goods</b>: the goods specified in the Purchase Order (including
+        any part thereof).</div>
+      <div><b>Intellectual Property Rights</b>: any patents, know-how, designs,
+        databases, copyrights, trademarks, brands, logos, business names, moral
+        rights, and other intellectual property rights.</div>
+      <div><b>Public Official</b>: any official or employee of any government,
+        Authority, political party, state-owned enterprise, public international
+        organization, or their representatives.</div>
+      <div><b>Purchase Order</b>: the section of this Agreement headed “Purchase
+        Order” containing an order for Goods and/or Services.</div>
+      <div><b>Services</b>: the services specified in the Purchase Order
+        (including any part and results thereof).</div>
+      <div><b>Site</b>: any place owned or controlled by the Company where
+        Deliverables may be performed by the Supplier.</div>
+      <div><b>Supplier</b>: the person or company referred to in the Purchase
+        Order as the Supplier.</div>
+      <div><b>Tax/Taxes</b>: any and all taxes, fees, withholdings, imposts,
+        levies, duties or other charges, with penalties, fines or interest
+        (excluding VAT/GST).</div>
+      <div><b>VAT/GST</b>: any and all forms of direct or indirect taxes levied
+        by reference to added value or sales, and related penalties and
+        interest.</div>
+      <div><b>Warranty Period</b>: 24 months from Delivery of Goods or
+        completion of Services (whichever is later).</div>
+      <div style="margin-bottom:6px;">In the interpretation of this Agreement:</div>
+      <div>a) The words “including” and “include” mean “including, but not
+        limited to”.</div>
+      <div>b) Words importing the singular include the plural and vice-versa.</div>
+      <div>c) No rule of contract interpretation applies to the disadvantage of
+        a party because that party prepared the Agreement or a provision.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">2.
+        Engagement</div>
+      <div>1. This Agreement records the entire agreement between the parties as
+        to its subject matter and supersedes all prior agreements and
+        understandings.</div>
+      <div>2. The Purchase Order is deemed accepted by the Supplier upon (a)
+        written acceptance (including email) or (b) commencement of any work or
+        services by the Supplier.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">3. Supply of
+        Deliverables</div>
+      <div>1. The Supplier must supply the Deliverables at the Delivery Point
+        and by the Delivery Date (or within a reasonable time if not specified).
+        Time is of the essence.</div>
+      <div>2. Failure to supply or perform any part of the Deliverables by the
+        Delivery Date is a material breach. The Company may deduct payments,
+        direct remedy, or terminate the Agreement if not remedied.</div>
+      <div>3. Non-compliant or partial provision of Deliverables is a failure
+        unless the Company confirms partial performance is acceptable.</div>
+      <div>4. The Supplier must obtain all required licences, certificates,
+        consents, and permits for the supply of Deliverables.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">4.
+        Acceptance and Non-compliant Deliverables</div>
+      <div>1. Supplier must provide Deliverables professionally and at best
+        quality, consistent with industry practice.</div>
+      <div>2. Payment does not constitute acceptance; Company must have
+        reasonable opportunity to inspect and notify acceptance.</div>
+      <div>3. During the Warranty Period, Company may reject defective or
+        non-compliant Deliverables by written notice.</div>
+      <div>4. Supplier must re-perform or re-supply rejected Deliverables within
+        a reasonable period.</div>
+      <div>5. If not re-performed or re-supplied, Company may do so at
+        Supplier’s cost or terminate and require refund.</div>
+      <div>6. Acceptance does not release Supplier from warranties or
+        obligations.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">5.
+        Warranties, Risk and Title</div>
+      <div>1. Supplier warrants: (a) good title to Goods; (b) Goods conform to
+        specifications; (c) compliance with laws; (d) Goods free from defects.</div>
+      <div>2. Supplier warrants Services conform to specifications, comply with
+        laws, and are performed with due care and skill.</div>
+      <div>3. Ownership of Deliverables passes to Company on Delivery or
+        payment, whichever is earlier.</div>
+      <div>4. If ownership passes before Delivery, Supplier must store and label
+        Goods as Company property.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">6. Contract
+        Price and Payment</div>
+      <div>1. Company pays Supplier the Contract Price as per Agreement.</div>
+      <div>2. Contract Price is fixed unless otherwise stated. All Supplier
+        expenses are included.</div>
+      <div>3. Contract Price includes applicable Taxes, except VAT/GST.</div>
+      <div>4. Payment for proper performance constitutes full consideration.</div>
+      <div>5. Supplier must submit acceptable invoices with required details.</div>
+      <div>6. Payment within 30 days of proper invoice, unless otherwise agreed
+        and nothing is in dispute.</div>
+      <div>7. Disputed amounts are withheld until resolved; undisputed amounts
+        are paid.</div>
+      <div>8. Company may deduct costs, damages, or other moneys due from
+        payments.</div>
+      <div>9. If required by law, Company may withhold amounts and is not liable
+        for withheld sums.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">7. Site
+        &amp; Health, Safety and Environmental</div>
+      <div>1. Company gives Supplier access to Site as required for supply of
+        Deliverables.</div>
+      <div>2. Company retains possession and control of Site at all times.</div>
+      <div>3. Supplier must not interfere with Company or others on Site.</div>
+      <div>4. Supplier is responsible for managing environmental, health, and
+        safety risks until ownership passes to Company.</div>
+      <div>5. Supplier must comply with Company policies and requirements.</div>
+      <div>6. Supplier must promptly notify Company of any incidents or
+        injuries.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">8. Insurance</div>
+      <div>1. Supplier must maintain insurance for Goods (until Delivery) and
+        Services, including liability and worker’s compensation.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">9. Liability
+        and Indemnity</div>
+      <div>1. Supplier indemnifies Company (except for Company’s gross
+        negligence, fraud, or willful misconduct) for losses, claims,
+        liabilities, and expenses arising from breach or performance.</div>
+      <div>2. Company is not liable for indirect loss or damage.</div>
+      <div>3. Company’s aggregate liability is limited to the Contract Price.</div>
+      <div>4. Company’s rights and remedies are cumulative.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">10.
+        Termination</div>
+      <div>1. Company may terminate with 30 days’ written notice.</div>
+      <div>2. Either party may terminate for material breach, breach of clause
+        13, or insolvency events.</div>
+      <div>3. Termination does not affect obligations or liabilities accrued
+        prior to termination.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">11.
+        Confidentiality</div>
+      <div>1. Supplier must keep all Company information confidential and not
+        disclose or use it except for supply of Deliverables.</div>
+      <div>2. Disclosure required by law is permitted, but Supplier must notify
+        Company if possible.</div>
+      <div>3. On termination or request, Supplier must return or destroy all
+        such information.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">12.
+        Intellectual Property Rights</div>
+      <div>1. IP created by providing Deliverables vests in Company.</div>
+      <div>2. Pre-existing IP remains with owner, but is licensed for use as
+        needed for Deliverables.</div>
+      <div>3. Supplier must ensure Deliverables do not infringe third-party IP
+        rights.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">13. Business
+        Conduct</div>
+      <div>1. Supplier must comply with Company’s Anti-Corruption Policies and
+        Laws, maintain its own policies, report any violations, and certify
+        compliance if requested.</div>
+      <div>2. Supplier must ensure Associated Persons are contractually bound to
+        equivalent terms.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">14.
+        Governing Law and Jurisdiction</div>
+      <div>1. This Agreement is governed by the laws of [COUNTRY];
+        parties submit to the exclusive jurisdiction of its courts.</div>
+      <div style="font-size:9pt; font-weight:bold; margin-top:6px;">15.
+        Miscellaneous</div>
+      <div>1. Supplier may not assign or subcontract without Company’s written
+        consent.</div>
+      <div>2. All notices must be in writing and delivered as specified in the
+        Purchase Order.</div>
+      <div>3. Proof of posting or email delivery is proof of receipt.</div>
+      <div>4. Relationship is principal and independent contractor; not
+        employment or agency.</div>
+      <div>5. Supplier may not bind Company except with written authority.</div>
+      <div>6. Waivers must be in writing and are limited to specific instances.</div>
+      <div>7. If a provision is unenforceable, it will be read down or severed
+        as needed.</div>
+      <div>8. No variation is effective unless in writing and signed by both
+        parties.</div>
+      <div>9. Parties must do all things necessary to give effect to the
+        Agreement.</div>
+      <div>10. This Agreement may be executed in counterparts.</div>
+      <div>11. Except as expressly provided, no third party may enforce any term
+        of this Agreement.</div>
+    </div>
