@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "cSupplier": "Supplier"
+    },
+    "links": {
+        "cSupplier": "Supplier"
+    }
+}

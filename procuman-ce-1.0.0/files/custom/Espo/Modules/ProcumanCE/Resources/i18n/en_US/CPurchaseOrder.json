@@ -1,0 +1,75 @@
+{
+    "fields": {
+        "supplier": "Supplier",
+        "requiredDate": "Required Date",
+        "poStatus": "PO Status",
+        "paymentTerms": "Payment Terms",
+        "supplierReference": "Supplier Reference",
+        "incoTerms": "Inco Terms",
+        "requiredDocuments": "Required Documents",
+        "invoiceReceived": "Invoice Received Date",
+        "goodsReceived": "Goods Received Date",
+        "description": "Notes to Supplier",
+        "internalNotes": "Internal Notes",
+        "documents": "PO Documents",
+        "poNumber": "PO Number",
+        "name": "Title",
+        "invoicePaid": "Invoice Paid Date",
+        "purchaseOrderLines": "Purchase Order Lines",
+        "totalAmount": "Total Amount",
+        "taxAmount": "Tax Amount",
+        "grandTotal": "Grand Total",
+        "currency": "Currency",
+        "shipVia": "Ship via",
+        "orderDate": "Order Submitted Date"
+    },
+    "links": {
+        "supplier": "Supplier",
+        "documents": "PO Documents",
+        "purchaseOrderLines": "Purchase Order Lines"
+    },
+    "labels": {
+        "Create CPurchaseOrder": "Create Purchase Order"
+    },
+    "options": {
+        "poStatus": {
+            "1": "Draft",
+            "2": "RFQ / Negotiation",
+            "3": "Order Submitted",
+            "4": "Partially Delivered",
+            "5": "Delivery Complete",
+            "6": "Invoice Received",
+            "7": "Invoice Paid",
+            "8": "Cancelled",
+            "9": "On-Hold"
+        },
+        "paymentTerms": {
+            "1": "30 Days Net",
+            "2": "60 Days Net",
+            "3": "Letter of Credit",
+            "4": "Advance Payment",
+            "5": "Cash on Delivery"
+        },
+        "incoTerms": {
+            "1": "EXW",
+            "2": "FOB",
+            "3": "DDP",
+            "4": "DDU",
+            "5": "N/A"
+        },
+        "requiredDocuments": {
+            "1": "Invoice",
+            "2": "Packing List",
+            "3": "Quality Certificate",
+            "4": "Certificate of Origin",
+            "5": "Shipping Bill / AWB / BOL"
+        },
+        "currency": {
+            "1": "USD",
+            "2": "EUR"
+        }
+    },
+    "tooltips": {
+        "documents": "Order Confirmation, RFQ, Supplier Offer, Invoice"
+    }
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "vendorId"
+                },
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "supplierType"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "paymentTerms"
+                }
+            ],
+            [
+                {
+                    "name": "supplierCategory"
+                },
+                {
+                    "name": "vatNumber"
+                }
+            ],
+            [
+                {
+                    "name": "registrationNumber"
+                },
+                {
+                    "name": "website"
+                }
+            ],
+            [
+                {
+                    "name": "bankAccount"
+                },
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "primary",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "documents"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "primary",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Supplier Documents"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "contacts"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isEmpty",
+                    "attribute": "id"
+                }
+            ]
+        },
+        "style": "primary",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Contacts"
+    }
+]

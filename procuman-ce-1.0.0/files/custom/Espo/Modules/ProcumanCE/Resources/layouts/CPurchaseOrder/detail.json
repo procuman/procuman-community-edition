@@ -1,0 +1,119 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "poNumber"
+                },
+                {
+                    "name": "orderDate"
+                },
+                {
+                    "name": "currency"
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "supplier"
+                },
+                {
+                    "name": "supplierReference"
+                },
+                {
+                    "name": "poStatus"
+                }
+            ],
+            [
+                {
+                    "name": "requiredDate"
+                },
+                {
+                    "name": "incoTerms"
+                },
+                {
+                    "name": "paymentTerms"
+                }
+            ],
+            [
+                {
+                    "name": "shipVia"
+                },
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "internalNotes"
+                },
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "requiredDocuments"
+                },
+                {
+                    "name": "documents"
+                }
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "goodsReceived"
+                },
+                {
+                    "name": "invoiceReceived"
+                },
+                {
+                    "name": "invoicePaid"
+                }
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "totalAmount"
+                },
+                {
+                    "name": "taxAmount"
+                },
+                {
+                    "name": "grandTotal"
+                }
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    }
+]

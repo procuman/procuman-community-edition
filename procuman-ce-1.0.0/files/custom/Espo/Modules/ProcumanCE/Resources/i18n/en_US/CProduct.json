@@ -1,0 +1,55 @@
+{
+    "fields": {
+        "name": "Product Name",
+        "supplier": "Supplier",
+        "price": "Price",
+        "priceCurrency": "Price (Currency)",
+        "priceConverted": "Price (Converted)",
+        "status": "Status",
+        "type": "Type",
+        "supplierPartNr": "Supplier Part Nr",
+        "productCategory": "Product Category",
+        "productImage": "Product Image",
+        "productDocuments": "Product Documents",
+        "productSource": "Product URL",
+        "uOM": "UOM",
+        "purchaseOrderLines": "Purchase Order Lines"
+    },
+    "links": {
+        "supplier": "Supplier",
+        "purchaseOrderLines": "Purchase Order Lines"
+    },
+    "labels": {
+        "Create CProduct": "Create Product"
+    },
+    "options": {
+        "status": {
+            "1": "Active",
+            "2": "Inactive",
+            "3": "Banned",
+            "4": "Discontinued"
+        },
+        "type": {
+            "1": "Goods",
+            "2": "Service"
+        },
+        "productCategory": {
+            "1": "IT Equipment",
+            "2": "Office Material",
+            "3": "Office Furniture",
+            "4": "Food & Beverage",
+            "5": "Software License",
+            "6": "Services",
+            "7": "Other"
+        },
+        "uOM": {
+            "1": "Piece",
+            "2": "Kilo",
+            "3": "Hour",
+            "4": "Day",
+            "5": "Month",
+            "6": "Box",
+            "7": "Liter"
+        }
+    }
+}

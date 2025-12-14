@@ -1,0 +1,27 @@
+{
+    "activities": {
+        "disabled": true
+    },
+    "history": {
+        "disabled": true
+    },
+    "products": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": true,
+        "index": 0
+    },
+    "contacts": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 1
+    },
+    "_delimiter_": {
+        "index": 2
+    },
+    "stream": {
+        "sticked": false,
+        "index": 3
+    }
+}

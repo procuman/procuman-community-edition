@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "billingAddress": "Платежный адрес",
+    "shippingAddress": "Адрес доставки",
+    "website": "Сайт"
+  },
+  "links": {
+    "meetings": "Встречи",
+    "calls": "Звонки",
+    "tasks": "Задачи"
+  },
+  "labels": {
+    "Create CSupplier": "Создать Supplier"
+  }
+}

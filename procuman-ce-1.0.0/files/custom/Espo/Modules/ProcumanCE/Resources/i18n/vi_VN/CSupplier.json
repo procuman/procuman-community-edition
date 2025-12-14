@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "billingAddress": "Địa chỉ thanh toán",
+    "shippingAddress": "Địa chỉ giao hàng",
+    "website": "Trang web"
+  },
+  "links": {
+    "meetings": "Cuộc hẹn",
+    "calls": "Cuộc gọi",
+    "tasks": "Nhiệm vụ"
+  },
+  "labels": {
+    "Create CSupplier": "Tạo Supplier"
+  }
+}

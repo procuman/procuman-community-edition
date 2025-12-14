@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "billingAddress": "Платіжна адреса",
+    "shippingAddress": "Адреса доставки",
+    "website": "Вебсайт"
+  },
+  "links": {
+    "meetings": "Зустрічі",
+    "calls": "Дзвінки",
+    "tasks": "Завдання"
+  },
+  "labels": {
+    "Create CSupplier": "Створити Supplier"
+  }
+}

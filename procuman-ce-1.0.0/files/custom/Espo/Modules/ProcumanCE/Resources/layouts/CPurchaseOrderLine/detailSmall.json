@@ -1,0 +1,46 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "product"
+                },
+                {
+                    "name": "lineProductName"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                {
+                    "name": "uOM"
+                }
+            ],
+            [
+                {
+                    "name": "quantity"
+                },
+                {
+                    "name": "price"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                {
+                    "name": "taxPercentage"
+                },
+                {
+                    "name": "taxAmount"
+                },
+                {
+                    "name": "grandTotal"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "relationshipPanels": {
+        "supplier": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "purchaseOrder": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

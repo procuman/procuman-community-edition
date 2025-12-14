@@ -1,0 +1,57 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "sidePanels": {
+        "detail": [
+            {
+                "name": "activities",
+                "reference": "activities"
+            },
+            {
+                "name": "history",
+                "reference": "history"
+            },
+            {
+                "name": "tasks",
+                "reference": "tasks"
+            }
+        ]
+    },
+    "bottomPanels": {
+        "detail": [
+            {
+                "name": "activities",
+                "reference": "activities",
+                "disabled": true
+            },
+            {
+                "name": "history",
+                "reference": "history",
+                "disabled": true
+            }
+        ]
+    },
+    "color": "#1840a9",
+    "iconClass": "fas fa-industry",
+    "kanbanViewMode": false,
+    "relationshipPanels": {
+        "documents": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "contacts": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "products": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "purchaseOrders": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

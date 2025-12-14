@@ -1,0 +1,15 @@
+{
+  "fields": {
+    "billingAddress": "Адрес за плащане",
+    "shippingAddress": "Адрес за доставка",
+    "website": "Уебсайт"
+  },
+  "links": {
+    "meetings": "Срещи",
+    "calls": "Обаждане",
+    "tasks": "Задачи"
+  },
+  "labels": {
+    "Create CSupplier": "Създаване на Supplier"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "fields": {
+        "name": {
+            "readOnly": null,
+            "required": null
+        },
+        "lineProductName": {
+            "readOnly": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "productId",
+                        "data": {
+                            "field": "product"
+                        }
+                    }
+                ]
+            },
+            "required": {
+                "conditionGroup": [
+                    {
+                        "type": "isEmpty",
+                        "attribute": "productId",
+                        "data": {
+                            "field": "product"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "ProcumanCE",
+    "description": "Procuman eProcurement Community Edition",
+    "author": "Procuman Software",
+    "php": [
+        ">=8.2"
+    ],
+    "acceptableVersions": [
+        ">=8.0"
+    ],
+    "version": "1.0.0",
+    "skipBackup": true,
+    "releaseDate": "2025-12-01"
+}

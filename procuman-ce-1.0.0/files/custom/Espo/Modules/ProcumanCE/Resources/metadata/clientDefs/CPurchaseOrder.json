@@ -1,0 +1,26 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "color": "#c04040",
+    "iconClass": "fas fa-cart-shopping",
+    "relationshipPanels": {
+        "supplier": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "documents": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "purchaseOrderLines": {
+            "layout": "lineItems",
+            "selectPrimaryFilterName": null,
+			"viewDisabled": true,
+			"selectDisabled": true,
+			"rowActionsView": "views/record/row-actions/relationship-no-unlink"
+        }
+    },
+    "kanbanViewMode": false
+}

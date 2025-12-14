@@ -1,0 +1,18 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "color": "#7f82de",
+    "iconClass": "fas fa-computer",
+    "relationshipPanels": {
+        "supplier": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "purchaseOrderLines": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

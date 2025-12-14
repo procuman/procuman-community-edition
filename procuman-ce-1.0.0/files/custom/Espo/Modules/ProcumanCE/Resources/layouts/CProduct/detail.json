@@ -1,0 +1,56 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "supplier"
+                },
+                {
+                    "name": "supplierPartNr"
+                }
+            ],
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "productCategory"
+                },
+                {
+                    "name": "price"
+                }
+            ],
+            [
+                {
+                    "name": "productImage"
+                },
+                {
+                    "name": "uOM"
+                }
+            ],
+            [
+                {
+                    "name": "productDocuments"
+                },
+                {
+                    "name": "productSource"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

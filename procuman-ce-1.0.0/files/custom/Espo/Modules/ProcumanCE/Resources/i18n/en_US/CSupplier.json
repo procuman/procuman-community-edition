@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "billingAddress": "Address",
+        "shippingAddress": "Shipping Address",
+        "website": "Website",
+        "status": "Status",
+        "supplierType": "Supplier Type",
+        "vendorId": "Vendor ID",
+        "supplierCategory": "Category",
+        "vatNumber": "VAT Number",
+        "registrationNumber": "Registration Number",
+        "bankAccount": "Bank Account",
+        "documents": "Documents",
+        "paymentTerms": "Payment Terms",
+        "name": "Company Name",
+        "contacts": "Contacts",
+        "products": "Products",
+        "purchaseOrders": "Purchase Orders"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "documents": "Documents",
+        "contacts": "Contacts",
+        "products": "Products",
+        "purchaseOrders": "Purchase Orders"
+    },
+    "labels": {
+        "Create CSupplier": "Create Supplier"
+    },
+    "options": {
+        "status": {
+            "1": "Prospect",
+            "2": "In Review",
+            "3": "Approved",
+            "4": "Inactive",
+            "5": "Blocked",
+            "6": "Not Approved"
+        },
+        "supplierType": {
+            "1": "Manufacturer",
+            "2": "Sales Agent / Trader",
+            "3": "Service Providor",
+            "4": "Other"
+        },
+        "supplierCategory": {
+            "1": "Food & Bewerage",
+            "2": "Construction Services",
+            "3": "Consulting",
+            "4": "Office Materials",
+            "5": "IT Equipments",
+            "6": "IT Services"
+        }
+    }
+}

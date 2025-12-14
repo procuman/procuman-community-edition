@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "cSupplier": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "cSupplier": {
+            "type": "belongsTo",
+            "foreign": "contacts",
+            "entity": "CSupplier",
+            "audited": true,
+            "isCustom": true
+        }
+    }
+}

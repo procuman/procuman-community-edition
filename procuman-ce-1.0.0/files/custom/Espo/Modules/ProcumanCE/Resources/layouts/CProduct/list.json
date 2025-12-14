@@ -1,0 +1,38 @@
+[
+    {
+        "name": "name",
+        "width": 20,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "supplier",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "supplierPartNr",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "type",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "productCategory",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "status",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "price",
+        "width": 10,
+        "align": "left"
+    }
+]

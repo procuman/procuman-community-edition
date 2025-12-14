@@ -1,0 +1,35 @@
+{
+    "fields": {
+        "purchaseOrder": "Purchase Order",
+        "quantity": "Quantity",
+        "price": "Price",
+        "name": "Row",
+        "amount": "Amount",
+        "taxPercentage": "Tax %",
+        "taxAmount": "Tax Amount",
+        "uOM": "UOM",
+        "grandTotal": "Grand Total",
+        "product": "Catalog Product",
+        "lineProductName": "Product Name"
+    },
+    "links": {
+        "purchaseOrder": "Purchase Order",
+        "product": "Catalog Product"
+    },
+    "labels": {
+        "Create CPurchaseOrderLine": "Create Purchase Order Line"
+    },
+    "options": {
+        "taxPercentage": {
+            "0": "0%",
+            "5": "5%",
+            "10": "10%",
+            "15": "15%",
+            "20": "20%"
+        },
+        "uOM": []
+    },
+    "layouts": {
+        "lineItems": "Line Items"
+    }
+}

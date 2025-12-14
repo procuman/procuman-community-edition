@@ -1,0 +1,8 @@
+[
+    "poNumber",
+    "name",
+    "poStatus",
+    "requiredDate",
+    "invoiceReceived",
+    "goodsReceived"
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "price"
+                },
+                {
+                    "name": "supplierPartNr"
+                }
+            ],
+            [
+                {
+                    "name": "productImage"
+                },
+                {
+                    "name": "productSource"
+                }
+            ],
+            [
+                {
+                    "name": "productCategory"
+                },
+                {
+                    "name": "productDocuments"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

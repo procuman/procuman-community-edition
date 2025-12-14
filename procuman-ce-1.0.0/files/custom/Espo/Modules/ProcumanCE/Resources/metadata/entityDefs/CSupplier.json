@@ -1,0 +1,320 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters",
+            "audited": true,
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "website": {
+            "type": "url",
+            "strip": true
+        },
+        "emailAddress": {
+            "type": "email"
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": [
+                "Office",
+                "Mobile",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Office"
+        },
+        "billingAddress": {
+            "type": "address"
+        },
+        "billingAddressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "billingAddressCity": {
+            "type": "varchar"
+        },
+        "billingAddressState": {
+            "type": "varchar"
+        },
+        "billingAddressCountry": {
+            "type": "varchar"
+        },
+        "billingAddressPostalCode": {
+            "type": "varchar"
+        },
+        "shippingAddress": {
+            "type": "address",
+            "view": "crm:views/account/fields/shipping-address"
+        },
+        "shippingAddressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "shippingAddressCity": {
+            "type": "varchar"
+        },
+        "shippingAddressState": {
+            "type": "varchar"
+        },
+        "shippingAddressCountry": {
+            "type": "varchar"
+        },
+        "shippingAddressPostalCode": {
+            "type": "varchar"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "style": {
+                "1": null,
+                "2": null,
+                "3": null,
+                "4": null,
+                "5": null,
+                "6": null
+            },
+            "default": "1",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "supplierType": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "style": {
+                "1": null,
+                "2": null,
+                "3": null,
+                "4": null
+            },
+            "isCustom": true
+        },
+        "vendorId": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "VEN",
+            "inlineEditDisabled": true,
+            "isCustom": true
+        },
+        "supplierCategory": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "allowCustomOptions": true,
+            "isSorted": true,
+            "displayAsList": true,
+            "audited": true,
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "style": {
+                "1": null,
+                "2": null,
+                "3": null,
+                "4": null,
+                "5": null,
+                "6": null
+            },
+            "isCustom": true
+        },
+        "vatNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "registrationNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "bankAccount": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "inlineEditDisabled": true,
+            "displayRawText": true,
+            "seeMoreDisabled": true,
+            "default": "Bank Name:\nBank Address:\nIBAN Account Number:\nSWIFT Code:",
+            "isCustom": true
+        },
+        "documents": {
+            "type": "linkMultiple",
+            "createButton": true
+        },
+        "paymentTerms": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": [],
+            "isCustom": true
+        },
+        "products": {
+            "type": "linkMultiple"
+        },
+        "contacts": {
+            "type": "linkMultiple",
+            "createButton": true
+        },
+        "purchaseOrders": {
+            "type": "linkMultiple"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent"
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent"
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent"
+        },
+        "documents": {
+            "type": "hasMany",
+            "foreign": "cSupplier",
+            "entity": "Document",
+            "audited": false,
+            "isCustom": true
+        },
+        "contacts": {
+            "type": "hasMany",
+            "foreign": "cSupplier",
+            "entity": "Contact",
+            "audited": false,
+            "isCustom": true
+        },
+        "products": {
+            "type": "hasMany",
+            "foreign": "supplier",
+            "entity": "CProduct",
+            "audited": false,
+            "isCustom": true
+        },
+        "purchaseOrders": {
+            "type": "hasMany",
+            "foreign": "supplier",
+            "entity": "CPurchaseOrder",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "vendorId"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    },
+    "optimisticConcurrencyControl": false
+}

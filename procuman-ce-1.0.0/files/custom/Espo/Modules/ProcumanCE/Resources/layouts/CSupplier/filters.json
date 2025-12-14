@@ -1,0 +1,7 @@
+[
+    "supplierCategory",
+    "supplierType",
+    "name",
+    "billingAddressCountry",
+    "billingAddressCity"
+]

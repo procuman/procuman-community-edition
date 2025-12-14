@@ -1,0 +1,4 @@
+{
+    "beforeSaveApiScript": null,
+    "beforeSaveCustomScript": "amount=quantity*price;\ntaxAmount=quantity*price*taxPercentage/100;\ngrandTotal=amount+taxAmount;\n\nif (productId) {\n    lineProductName=productName;\n    name=string\\concatenate(productName,' | Qty:',quantity,' | Price:',price,' | Amount:',amount);\n} else {\n    name=string\\concatenate(lineProductName,' | Qty:',quantity,' | Price:',price,' | Amount:',amount);\n}"
+}

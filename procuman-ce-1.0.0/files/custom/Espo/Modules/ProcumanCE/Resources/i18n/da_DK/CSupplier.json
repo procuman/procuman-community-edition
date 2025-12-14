@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "billingAddress": "Betalingsadresse",
+    "shippingAddress": "Leveringsadresse"
+  },
+  "links": {
+    "meetings": "Møder",
+    "calls": "Opkald",
+    "tasks": "Opgaver"
+  },
+  "labels": {
+    "Create CSupplier": "Opret Supplier "
+  }
+}

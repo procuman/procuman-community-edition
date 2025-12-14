@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "cSupplier": {
+            "type": "link"
+        },
+        "cPurchaseOrder": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "cSupplier": {
+            "type": "belongsTo",
+            "foreign": "documents",
+            "entity": "CSupplier",
+            "audited": false,
+            "isCustom": true
+        },
+        "cPurchaseOrder": {
+            "type": "belongsTo",
+            "foreign": "documents",
+            "entity": "CPurchaseOrder",
+            "audited": true,
+            "isCustom": true
+        }
+    }
+}

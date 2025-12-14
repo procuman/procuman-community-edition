@@ -1,0 +1,38 @@
+[
+    {
+        "name": "poNumber",
+        "width": 10,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "width": 25,
+        "align": "left"
+    },
+    {
+        "name": "supplier",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "supplierReference",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "poStatus",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "requiredDate",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "createdAt",
+        "width": 10,
+        "align": "left"
+    }
+]

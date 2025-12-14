@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "billingAddress": "Endereço de Cobrança",
+    "shippingAddress": "Endereço de Entrega"
+  },
+  "links": {
+    "meetings": "Reuniões",
+    "calls": "Ligações",
+    "tasks": "Tarefas"
+  },
+  "labels": {
+    "Create CSupplier": "Criar Supplier"
+  }
+}

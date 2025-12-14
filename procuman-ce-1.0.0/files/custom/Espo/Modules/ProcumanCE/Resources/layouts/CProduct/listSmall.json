@@ -1,0 +1,22 @@
+[
+    {
+        "name": "productImage",
+        "width": 20
+    },
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "type",
+        "width": 20
+    },
+    {
+        "name": "status",
+        "width": 20
+    },
+    {
+        "name": "price",
+        "width": 20
+    }
+]

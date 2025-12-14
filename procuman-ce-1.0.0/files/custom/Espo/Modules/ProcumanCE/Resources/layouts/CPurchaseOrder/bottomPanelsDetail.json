@@ -1,0 +1,15 @@
+{
+    "purchaseOrderLines": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": true,
+        "index": 0
+    },
+    "_delimiter_": {
+        "index": 1
+    },
+    "stream": {
+        "sticked": false,
+        "index": 2
+    }
+}

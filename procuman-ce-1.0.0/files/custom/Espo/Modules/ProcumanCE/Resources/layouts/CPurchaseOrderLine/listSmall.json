@@ -1,0 +1,42 @@
+[
+    {
+        "name": "purchaseOrder",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "lineProductName",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "uOM",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "quantity",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "price",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "amount",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "taxPercentage",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "grandTotal",
+        "width": 10,
+        "align": "left"
+    }
+]

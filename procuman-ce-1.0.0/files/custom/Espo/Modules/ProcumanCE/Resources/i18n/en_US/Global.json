@@ -1,0 +1,14 @@
+{
+    "scopeNames": {
+        "CSupplier": "Supplier",
+        "CProduct": "Product",
+        "CPurchaseOrder": "Purchase Order",
+        "CPurchaseOrderLine": "Purchase Order Line"
+    },
+    "scopeNamesPlural": {
+        "CSupplier": "Suppliers",
+        "CProduct": "Products",
+        "CPurchaseOrder": "Purchase Orders",
+        "CPurchaseOrderLine": "Purchase Order Lines"
+    }
+}

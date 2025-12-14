@@ -1,0 +1,22 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "purchaseOrder": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "product": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    },
+    "additionalLayouts": {
+        "lineItems": {
+            "type": "list",
+            "isCustom": true
+        }
+    }
+}

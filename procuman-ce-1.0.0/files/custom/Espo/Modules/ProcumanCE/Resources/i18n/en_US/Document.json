@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "cSupplier": "Supplier",
+        "cPurchaseOrder": "Purchase Order"
+    },
+    "links": {
+        "cSupplier": "Supplier",
+        "cPurchaseOrder": "Purchase Order"
+    }
+}

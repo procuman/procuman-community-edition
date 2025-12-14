@@ -1,0 +1,23 @@
+[
+    {
+        "name": "vendorId",
+        "width": 20,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "width": 30,
+        "align": "left"
+    },
+    {
+        "name": "billingAddressCity",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "billingAddressCountry",
+        "width": 20,
+        "align": "left"
+    }
+]

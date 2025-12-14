@@ -1,0 +1,33 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "aclPortal": true,
+    "aclPortalLevelList": [
+        "all",
+        "account",
+        "contact",
+        "own",
+        "no"
+    ],
+    "customizable": true,
+    "importable": true,
+    "notifications": true,
+    "duplicateCheckFieldList": [
+        "name",
+        "emailAddress"
+    ],
+    "stream": true,
+    "disabled": false,
+    "type": "Company",
+    "module": "ProcumanCE",
+    "object": true,
+    "isCustom": true,
+    "statusField": "status",
+    "kanbanStatusIgnoreList": null,
+    "stars": false,
+    "preserveAuditLog": false,
+    "collaborators": false,
+    "assignedUsers": false
+}
