@@ -62,7 +62,7 @@
 ### **Prerequisites**
 - EspoCRM platform installed and running
 - Admin access to EspoCRM administration panel
-- PHP 8.2+ and MySQL/MariaDB database
+- PHP 8.3+ and MySQL/MariaDB database
 
 ### **Step 1: Install EspoCRM Platform**
 ```bash
@@ -100,10 +100,10 @@ cd espocrm
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
-| **PHP Version** | 8.2
+| **PHP Version** | 8.3
 | **Memory** | 512MB | 1GB+ |
 | **Database** | MySQL 5.7 | MariaDB 10.3+ |
-| **Web Server** | Apache 2.4 | Nginx 1.18+ |
+| **Web Server** | Apache 2.4 
 
 ---
 
